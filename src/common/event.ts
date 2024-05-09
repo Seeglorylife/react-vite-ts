@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect } from 'react';
-import EventEmitter, { EventHander } from 'utils/eventEmitter';
+import { useEffect } from "react";
+import EventEmitter, { EventHander } from "utils/eventEmitter";
 
 const events = new EventEmitter();
 

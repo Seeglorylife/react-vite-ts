@@ -1,4 +1,5 @@
-import { ComponentType } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ComponentType } from "react";
 
 /** 动态对象 */
 export interface DynamicObj {
