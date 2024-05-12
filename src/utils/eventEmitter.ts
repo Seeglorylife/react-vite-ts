@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /** Event Bus通信 */
 
-import { pull } from 'lodash';
+import { pull } from "lodash";
 
 export type EventHander<E = any> = (e: E) => void;
 
@@ -56,7 +56,7 @@ class EventEmitter<E = any> {
 
     for (let i = 0; i < fns.length; i++) {
       const fn = fns[i] as EventHander<any>;
-      return new Promise<any>((resolve, _reject) => {
+      return new Promise<any>((resolve) => {
         resolve(fn(payload));
       });
     }
