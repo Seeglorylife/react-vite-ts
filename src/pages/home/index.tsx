@@ -1,8 +1,10 @@
+import Layout from "@/layouts";
+
 const HomePage = () => {
   return (
-    <div>
-      <div>Home Page</div>
-    </div>
+    <Layout activeKey="home">
+      <h1>Home Page</h1>
+    </Layout>
   );
 };
 
