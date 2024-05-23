@@ -1,3 +1,5 @@
+import { DynamicObj } from "@/common/types";
+
 export interface ReqParams {
   username: string;
   password: string;
@@ -9,9 +11,9 @@ export interface ResResult {
   headers: object;
 }
 
-export interface ResResultData {
+export interface ResResultData<T = DynamicObj> {
   code?: number;
-  result?: any;
+  result?: T;
   message: string;
   status: string;
 }
