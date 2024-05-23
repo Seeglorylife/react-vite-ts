@@ -9,7 +9,7 @@ function DemoComp() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    i18n.changeLanguage("en"); // 改变语言，同步国际化
+    i18n.changeLanguage("zh"); // 改变语言，同步国际化
   }, [i18n]);
 
   return (
