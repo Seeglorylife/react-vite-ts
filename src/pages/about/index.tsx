@@ -1,11 +1,12 @@
+import Layout from "@/layouts";
 import DemoComp from "comps/demoComp";
 
 const AboutPage = () => {
   return (
-    <div>
-      <div>About Page</div>
+    <Layout activeKey="about">
+      <h1>About Page</h1>
       <DemoComp />
-    </div>
+    </Layout>
   );
 };
 
