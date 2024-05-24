@@ -23,7 +23,8 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.1",
     "react-router-dom": "^6.23.0",
-    "zustand": "^4.5.2"
+    "zustand": "^4.5.2",
+    "unocss": "^0.59.4"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.2.2",
@@ -36,6 +37,16 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-legacy": "^5.4.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "@iconify/json": "^2.2.205",
+    "@unocss/eslint-config": "^0.59.4",
+    "@unocss/preset-attributify": "^0.59.4",
+    "@unocss/preset-icons": "^0.59.4",
+    "@unocss/preset-rem-to-px": "^0.59.4",
+    "@unocss/preset-wind": "^0.59.4",
+    "@unocss/reset": "^0.59.4",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "unplugin-icons": "^0.18.5",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
