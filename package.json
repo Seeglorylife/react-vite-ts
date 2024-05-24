@@ -5,9 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "VITE_CJS_TRACE=true && vite dev",
-		"build:dev": "vue-tsc && vite build --mode dev",
-		"build:test": "vue-tsc && vite build --mode test",
-		"build:prod": "vue-tsc && vite build --mode prod",
+		"build:dev": "tsc && vite build --mode dev",
+		"build:test": "tsc && vite build --mode test",
+		"build:prod": "tsc && vite build --mode prod",
 		"lint": "prettier --check 'src/**/*.{ts,tsx,js,jsx}' && eslint 'src/**/*.{ts,tsx,js,jsx} --fix'",
 		"preview": "vite preview",
 		"format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,less,scss,html,md}'"
