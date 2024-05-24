@@ -15,34 +15,34 @@ const indicator = `
 `;
 
 export default class Loading {
-  private $el: HTMLDivElement | null;
-  private $indicator: HTMLDivElement;
-  /**
-   * 加载状态构造函数
-   * @param {*} options.target 加载状态的宿主元素
-   */
-  constructor(options: { target: HTMLDivElement | null }) {
-    this.$el = options.target;
-    this.$indicator = document.createElement('div');
-    this.$indicator.classList.add('bi-loading-mask');
-    this.$indicator.innerHTML = indicator;
-  }
+	private $el: HTMLDivElement | null;
+	private $indicator: HTMLDivElement;
+	/**
+	 * 加载状态构造函数
+	 * @param {*} options.target 加载状态的宿主元素
+	 */
+	constructor(options: { target: HTMLDivElement | null }) {
+		this.$el = options.target;
+		this.$indicator = document.createElement('div');
+		this.$indicator.classList.add('bi-loading-mask');
+		this.$indicator.innerHTML = indicator;
+	}
 
-  public loading() {
-    if (!this.$el) return;
-    if (window.getComputedStyle(this.$el).position === 'static') {
-      this.$el.classList.add('bi-loading__parent--relative');
-    }
-    const { width, height } = this.$el.getBoundingClientRect();
-    if ((width && width < 60) || (height && height < 60)) {
-      this.$indicator.classList.add('bi-loading--sm');
-    }
-    this.$el.appendChild(this.$indicator);
-  }
+	public loading() {
+		if (!this.$el) return;
+		if (window.getComputedStyle(this.$el).position === 'static') {
+			this.$el.classList.add('bi-loading__parent--relative');
+		}
+		const { width, height } = this.$el.getBoundingClientRect();
+		if ((width && width < 60) || (height && height < 60)) {
+			this.$indicator.classList.add('bi-loading--sm');
+		}
+		this.$el.appendChild(this.$indicator);
+	}
 
-  public close() {
-    if (!this.$el) return;
-    this.$el.classList.remove('bi-loading__parent--relative');
-    this.$indicator.remove();
-  }
+	public close() {
+		if (!this.$el) return;
+		this.$el.classList.remove('bi-loading__parent--relative');
+		this.$indicator.remove();
+	}
 }

@@ -1,8 +1,8 @@
 {
-  "common": {
-    "more": "look more"
-  },
-  "leftMenus": {
-    "home": "home"
-  }
+	"common": {
+		"more": "look more"
+	},
+	"leftMenus": {
+		"home": "home"
+	}
 }

@@ -1,13 +1,13 @@
 import nProgress from 'nprogress';
 
 nProgress.configure({
-  showSpinner: false,
+	showSpinner: false
 });
 
 export const startLoading = () => {
-  nProgress.start();
+	nProgress.start();
 };
 
 export const endLoading = () => {
-  nProgress.done();
+	nProgress.done();
 };
